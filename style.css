@@ -22,6 +22,8 @@
 
 ul, ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -75,6 +77,7 @@ a:focus {
 .nav-links {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -190,6 +193,8 @@ section h2::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
+  background: url(img/yoga-girl.jpg) center center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .class-card {
@@ -227,6 +232,8 @@ section h2::after {
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
+  background: url(img/yoga-logo.jpg) center center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .instructor-profile {
@@ -547,5 +554,11 @@ section h2::after {
 
   .instructor-profile {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .schedule-section {
+    display: none;
   }
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooster | InnerZen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><a href="/">InnerZen</a></div>
+      <button class="menu-toggle" aria-label="Menu"><span class="hamburger"></span></button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="over-ons.html">Over Ons</a></li>
+        <li><a href="lessen.html">Lessen</a></li>
+        <li><a href="rooster.html" class="active">Rooster</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Герой -->
+  <section class="hero" style="background: url('img/main-bg.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Rooster</h1>
+      <p>Bekijk onze wekelijkse planning en vind de perfecte les die bij jouw schema past.</p>
+    </div>
+  </section>
+
+  <!-- Расписание -->
+  <section id="rooster" class="schedule-section" style="max-width: 900px; margin: 3rem auto;">
+    <h2>Rooster</h2>
+    <p style="color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 1.5rem; text-align: center;">
+      Ons rooster helpt je om je yogalessen en meditatie eenvoudig in te plannen.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Dag</th>
+          <th>Tijd</th>
+          <th>Les</th>
+          <th>Instructeur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maandag</td>
+          <td>10:00 - 11:00</td>
+          <td>Hatha Yoga</td>
+          <td>Anna</td>
+        </tr>
+        <tr>
+          <td>Woensdag</td>
+          <td>18:30 - 19:30</td>
+          <td>Vinyasa Yoga</td>
+          <td>Lisa</td>
+        </tr>
+        <tr>
+          <td>Vrijdag</td>
+          <td>20:00 - 20:45</td>
+          <td>Geleide Meditatie</td>
+          <td>Wouter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Тематический текст -->
+    <div style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); padding:2rem; margin-top:2rem; text-align:left;">
+      <h3 style="color:var(--color-primary); margin-bottom:1rem;">Hoe ons rooster werkt</h3>
+      <p>
+        Ons rooster wordt wekelijks bijgewerkt en kan incidenteel worden aangepast bij feestdagen of speciale evenementen. 
+        We raden aan om vooraf je plaats te reserveren via onze website of aan de balie in de studio, zodat je zeker bent van deelname. 
+      </p>
+
+      <h4 style="color:var(--color-primary); margin-top:1.5rem;">Als je niet kunt komen</h4>
+      <p>
+        Kun je onverwachts niet aanwezig zijn? Laat het ons dan zo snel mogelijk weten — bij voorkeur tot 24 uur van tevoren. 
+        Zo kunnen we jouw plek aanbieden aan iemand op de wachtlijst.
+      </p>
+
+      <h4 style="color:var(--color-primary); margin-top:1.5rem;">Gemiste les inhalen</h4>
+      <p>
+        Heb je een les gemist? Geen probleem! Binnen twee weken kun je deze inhalen tijdens een andere les naar keuze 
+        (mits er plaats beschikbaar is). Neem hiervoor even contact op via e-mail of telefoon, zodat wij je kunnen inplannen.
+      </p>
+
+      <h4 style="color:var(--color-primary); margin-top:1.5rem;">Tips voor een fijne leservaring</h4>
+      <ul style="color:var(--color-text-light); padding-left:1.2rem; list-style:disc;">
+        <li>Kom 10-15 minuten voor aanvang, zodat je rustig kunt voorbereiden.</li>
+        <li>Draag comfortabele kleding en neem eventueel je eigen mat mee.</li>
+        <li>Schakel je telefoon uit of zet hem op stil.</li>
+        <li>Respecteer de rust in de zaal en volg de aanwijzingen van de instructeur.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <p>&copy; 2025 InnerZen. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

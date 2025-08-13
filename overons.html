@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over Ons | InnerZen</title>
+  <link rel="stylesheet" href="style.css"> <!-- Подключи твой CSS -->
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">InnerZen</a>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="overons.html" class="active">Over Ons</a></li>
+        <li><a href="lessen.html">Lessen</a></li>
+        <li><a href="rooster.html">Rooster</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Герой (вводный блок) -->
+  <section class="hero" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);">
+    <div class="hero-content">
+      <h1>Over InnerZen</h1>
+      <p>Ontdek onze missie, visie en passie voor welzijn en balans.</p>
+    </div>
+  </section>
+
+  <!-- Контент "О нас" -->
+  <section id="over" class="about-section">
+    <h2>Over Ons</h2>
+    <div style="max-width:900px;margin:auto;text-align:left">
+      <p>Welkom bij <strong>InnerZen</strong>, het centrum waar mindfulness, fysieke gezondheid en innerlijke rust
+        samenkomen. Bij ons draait alles om het creëren van een veilige en inspirerende omgeving waarin je kunt
+        vertragen, ontspannen en jezelf opnieuw kunt ontdekken. Onze missie is om iedereen – van complete beginners tot
+        ervaren yogi's en meditatieliefhebbers – te begeleiden op hun unieke pad naar balans en welzijn.</p>
+
+      <p>In een wereld vol haast, drukte en constante prikkels, bieden wij een plek waar je de stilte weer kunt horen en
+        de rust kunt voelen. Onze lessen combineren eeuwenoude tradities van yoga en meditatie met moderne inzichten
+        over beweging, ademhaling en mentale gezondheid. Het resultaat is een authentieke ervaring die niet alleen je
+        lichaam sterker en soepeler maakt, maar ook je geest helder en gefocust houdt.</p>
+
+      <img src="img/Yoga.jpg" alt="Yoga Studio InnerZen" style="width:100%;border-radius:12px;margin:2rem 0;">
+
+      <p>Ons team van toegewijde docenten neemt de tijd om je persoonlijk te begeleiden, je behoeften te begrijpen en je
+        oefeningen aan te passen aan jouw niveau. Hierbij staan respect, vriendelijkheid en persoonlijke groei centraal.
+        Of je nu op zoek bent naar meer flexibiliteit, een sterker lichaam, minder stress of gewoon een moment voor
+        jezelf – bij InnerZen vind je wat je zoekt.</p>
+
+      <p>Wij geloven dat welzijn begint met aandacht voor lichaam én geest. Daarom nodigen wij je uit om mee te doen, te
+        ontdekken hoeveel kracht er schuilt in zachte bewegingen, bewuste ademhaling en het vinden van rust in het
+        moment. Welkom thuis bij InnerZen – jouw plek voor ontspanning, inspiratie en verbinding.</p>
+
+      <p>Onze studio is warm en uitnodigend, voorzien van natuurlijke verlichting, zachte matten en kalmerende geuren.
+        Hier vind je rust in de drukte van het moderne leven.</p>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <p>&copy; 2025 InnerZen. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- Скрипт для мобильного меню -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
